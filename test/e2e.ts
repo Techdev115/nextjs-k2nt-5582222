@@ -12,6 +12,8 @@ test('example loads and displays data', async ({ page }) => {
 		const data = JSON.parse(text);
 		return !data.isValidating;
 	};
+	
+// 	await page.goto('/login);
 
 	await page.goto('/');
 	const result = page.getByTestId('result');
